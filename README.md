@@ -21,7 +21,7 @@ local function CheckAd()
 		if not getgenv()["Youtube"] then
 			getgenv()["Youtube"] = true;
 			NotificationTable.Notify(" Youtube ", "Youtube https://www.youtube.com/channel/UC92aBBDpwMA8DIv0UArKDKA/videos", "", {
-				Duration = 7,
+				Duration = 1,
 				TitleSettings = {
 					TextXAlignment = Enum.TextXAlignment.Center,
 					Font = Enum.Font.SourceSansSemibold,
@@ -34,9 +34,9 @@ local function CheckAd()
 					Retract = true
 				}
 			})
-			wait(.3)
+			wait(2)
 			NotificationTable.Notify("Thanks For Use Script ", "Thanks For Use Script", "", {
-				Duration = 7,
+				Duration = 1,
 				TitleSettings = {
 					TextXAlignment = Enum.TextXAlignment.Center,
 					Font = Enum.Font.SourceSansSemibold,
@@ -54,7 +54,7 @@ local function CheckAd()
 		if not _G["Youtube"] then
 			_G["Youtube"] = true;
 			NotificationTable.Notify(" Thanks For Use Script ", "Thanks For Use Script", "", {
-				Duration = 7,
+				Duration = 1,
 				TitleSettings = {
 					TextXAlignment = Enum.TextXAlignment.Center,
 					Font = Enum.Font.SourceSansSemibold,
@@ -67,9 +67,9 @@ local function CheckAd()
 					Retract = true
 				}
 			})
-			wait(.3)
+			wait(2)
 			NotificationTable.Notify(" Youtube ", "https://www.youtube.com/channel/UC92aBBDpwMA8DIv0UArKDKA/videos", "", {
-				Duration = 7,
+				Duration = 1,
 				TitleSettings = {
 					TextXAlignment = Enum.TextXAlignment.Center,
 					Font = Enum.Font.SourceSansSemibold,
@@ -89,7 +89,7 @@ end
 
 local function CreateNormalNotificationArguments()
 	local ArgFour = {
-		Duration = 4,
+		Duration = 2,
 
 		TitleSettings = {
 			BackgroundColor3 = Color3.fromRGB(200, 200 ,200),
