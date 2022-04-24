@@ -21,7 +21,7 @@ local function CheckAd()
 		if not getgenv()["Credits"] then
 			getgenv()["Credits"] = true;
 			NotificationTable.Notify("Credits : 03.s#6260", "Credits : 03.s#6260", "rbxassetid://9460726684", {
-				Duration = 10,
+				Duration = 0,
 				TitleSettings = {
 					TextXAlignment = Enum.TextXAlignment.Center,
 					Font = Enum.Font.SourceSansSemibold,
@@ -35,7 +35,7 @@ local function CheckAd()
 				}
 			})
 			wait(0)
-			NotificationTable.Notify("Anti Afk System", "Anti Afk Always On", "rbxassetid://7258714296", {
+			NotificationTable.Notify("Anti Afk System", "Anti Afk Always On", "rbxassetid://9460726684", {
 				Duration = 10,
 				TitleSettings = {
 					TextXAlignment = Enum.TextXAlignment.Center,
@@ -73,7 +73,7 @@ local function CheckAd()
 				}
 			})
 			wait(0)
-			NotificationTable.Notify("Anti Afk System", "Anti Afk Always On", "rbxassetid://7258714296", {
+			NotificationTable.Notify("Anti Afk System", "Anti Afk Always On", "rbxassetid://9460726684", {
 				Duration = 10,
 				TitleSettings = {
 					TextXAlignment = Enum.TextXAlignment.Center,
