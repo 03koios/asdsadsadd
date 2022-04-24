@@ -18,10 +18,10 @@ end
 
 local function CheckAd()
 	if getgenv then
-		if not getgenv()["Youtube"] then
-			getgenv()["Youtube"] = true;
-			NotificationTable.Notify(" Youtube ", "Youtube https://www.youtube.com/channel/UC92aBBDpwMA8DIv0UArKDKA/videos", "", {
-				Duration = 1,
+		if not getgenv()["Credits"] then
+			getgenv()["Credits"] = true;
+			NotificationTable.Notify("Credits : 03.s#6260", "Credits : 03.s#6260", "rbxassetid://9460726684", {
+				Duration = 7,
 				TitleSettings = {
 					TextXAlignment = Enum.TextXAlignment.Center,
 					Font = Enum.Font.SourceSansSemibold,
@@ -34,9 +34,9 @@ local function CheckAd()
 					Retract = true
 				}
 			})
-			wait(2)
-			NotificationTable.Notify("Thanks For Use Script ", "Thanks For Use Script", "", {
-				Duration = 1,
+			wait(0)
+			NotificationTable.Notify("Anti Afk System", "Anti Afk Always On", "rbxassetid://7258714296", {
+				Duration = 3,
 				TitleSettings = {
 					TextXAlignment = Enum.TextXAlignment.Center,
 					Font = Enum.Font.SourceSansSemibold,
@@ -50,11 +50,16 @@ local function CheckAd()
 				}
 			})
 		end
+
+        for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
+            v:Disable()
+            end
+
 	else
-		if not _G["Youtube"] then
-			_G["Youtube"] = true;
-			NotificationTable.Notify(" Thanks For Use Script ", "Thanks For Use Script", "", {
-				Duration = 1,
+		if not _G["Credits"] then
+			_G["Credits"] = true;
+			NotificationTable.Notify("Credits : 03.s#6260", "Credits : 03.s#6260", "rbxassetid://9460726684", {
+				Duration = 7,
 				TitleSettings = {
 					TextXAlignment = Enum.TextXAlignment.Center,
 					Font = Enum.Font.SourceSansSemibold,
@@ -67,9 +72,9 @@ local function CheckAd()
 					Retract = true
 				}
 			})
-			wait(2)
-			NotificationTable.Notify(" Youtube ", "https://www.youtube.com/channel/UC92aBBDpwMA8DIv0UArKDKA/videos", "", {
-				Duration = 1,
+			wait(.3)
+			NotificationTable.Notify("Anti Afk System", "Anti Afk Always On", "rbxassetid://7258714296", {
+				Duration = 7,
 				TitleSettings = {
 					TextXAlignment = Enum.TextXAlignment.Center,
 					Font = Enum.Font.SourceSansSemibold,
@@ -87,9 +92,13 @@ local function CheckAd()
 	wait()
 end
 
+for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
+    v:Disable()
+    end
+
 local function CreateNormalNotificationArguments()
 	local ArgFour = {
-		Duration = 2,
+		Duration = 4,
 
 		TitleSettings = {
 			BackgroundColor3 = Color3.fromRGB(200, 200 ,200),
