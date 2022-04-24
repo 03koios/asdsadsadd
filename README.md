@@ -21,7 +21,7 @@ local function CheckAd()
 		if not getgenv()["Credits"] then
 			getgenv()["Credits"] = true;
 			NotificationTable.Notify("Credits : 03.s#6260", "Credits : 03.s#6260", "rbxassetid://9460726684", {
-				Duration = 7,
+				Duration = 10,
 				TitleSettings = {
 					TextXAlignment = Enum.TextXAlignment.Center,
 					Font = Enum.Font.SourceSansSemibold,
@@ -36,7 +36,7 @@ local function CheckAd()
 			})
 			wait(0)
 			NotificationTable.Notify("Anti Afk System", "Anti Afk Always On", "rbxassetid://7258714296", {
-				Duration = 3,
+				Duration = 10,
 				TitleSettings = {
 					TextXAlignment = Enum.TextXAlignment.Center,
 					Font = Enum.Font.SourceSansSemibold,
@@ -59,7 +59,7 @@ local function CheckAd()
 		if not _G["Credits"] then
 			_G["Credits"] = true;
 			NotificationTable.Notify("Credits : 03.s#6260", "Credits : 03.s#6260", "rbxassetid://9460726684", {
-				Duration = 7,
+				Duration = 10,
 				TitleSettings = {
 					TextXAlignment = Enum.TextXAlignment.Center,
 					Font = Enum.Font.SourceSansSemibold,
@@ -72,9 +72,9 @@ local function CheckAd()
 					Retract = true
 				}
 			})
-			wait(.3)
+			wait(0)
 			NotificationTable.Notify("Anti Afk System", "Anti Afk Always On", "rbxassetid://7258714296", {
-				Duration = 7,
+				Duration = 10,
 				TitleSettings = {
 					TextXAlignment = Enum.TextXAlignment.Center,
 					Font = Enum.Font.SourceSansSemibold,
@@ -98,7 +98,7 @@ for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
 
 local function CreateNormalNotificationArguments()
 	local ArgFour = {
-		Duration = 4,
+		Duration = 10,
 
 		TitleSettings = {
 			BackgroundColor3 = Color3.fromRGB(200, 200 ,200),
