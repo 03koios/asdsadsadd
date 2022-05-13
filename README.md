@@ -1,10 +1,3 @@
-wait(1)
-game.StarterGui:SetCore("SendNotification", {
-Title = "AFK!"; 
-Text = "Anti AFK!"; 
-Icon = "http://www.roblox.com/asset/?id=9614226681";
-Duration = 5; 
-})
 for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
 v:Disable()
 end
@@ -18,7 +11,7 @@ end
 game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "Discord Server",
 	Icon = "http://www.roblox.com/asset/?id=9614208528"; -- the image if u want. 
-	Text = "https://discord.gg/x4gGhjVxXz",
+	Text = "Discord Server Copy Link?",
 	Duration = 69420,
 	Callback = bindable,
 	Button1 = "Copy"
@@ -26,16 +19,9 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 
 
 wait(1)
-local bindable = Instance.new("BindableFunction")
-function bindable.OnInvoke(response)
-	print("else")
-	setclipboard("https://bit.ly/3wskBCb")
-end
-game:GetService("StarterGui"):SetCore("SendNotification", {
-	Title = "Ui Link",
-	Icon = "http://www.roblox.com/asset/?id=9614278188"; -- the image if u want. 
-	Text = "Copy ? ",
-	Duration = 20,
-	Callback = bindable,
-	Button1 = "Copy"
+game.StarterGui:SetCore("SendNotification", {
+Title = "Support Executor"; 
+Text = "Krnl Synapse Script Ware And More"; 
+Icon = "http://www.roblox.com/asset/?id=9615044335";
+Duration = 5; 
 })
