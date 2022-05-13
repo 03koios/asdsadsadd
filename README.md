@@ -23,3 +23,19 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Callback = bindable,
 	Button1 = "Copy"
 })
+
+
+wait(1)
+local bindable = Instance.new("BindableFunction")
+function bindable.OnInvoke(response)
+	print("else")
+	setclipboard("https://bit.ly/3wskBCb")
+end
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "Ui Link",
+	Icon = "http://www.roblox.com/asset/?id=9614278188"; -- the image if u want. 
+	Text = "Copy ? ",
+	Duration = 20,
+	Callback = bindable,
+	Button1 = "Copy"
+})
