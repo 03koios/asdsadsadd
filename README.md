@@ -16,7 +16,7 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Button1 = "Copy"
 })
 
-wait(2)
+wait(3)
 game.StarterGui:SetCore("SendNotification", {
 Title = "Key Saved"; 
 Text = "Your Key is Save Workspace in Your Executor File"; 
