@@ -2,7 +2,6 @@ for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
 v:Disable()
 end
 
-wait(1)
 local bindable = Instance.new("BindableFunction")
 function bindable.OnInvoke(response)
 	print("else")
@@ -12,7 +11,7 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "Discord Server",
 	Icon = "http://www.roblox.com/asset/?id=9614208528"; -- the image if u want. 
 	Text = "Discord Server Copy Link?",
-	Duration = 5,
+	Duration = 3,
 	Callback = bindable,
 	Button1 = "Copy"
 })
