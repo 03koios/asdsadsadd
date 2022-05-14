@@ -12,16 +12,17 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "Discord Server",
 	Icon = "http://www.roblox.com/asset/?id=9614208528"; -- the image if u want. 
 	Text = "Discord Server Copy Link?",
-	Duration = 69420,
+	Duration = 10,
 	Callback = bindable,
 	Button1 = "Copy"
 })
 
 
-wait(1)
+wait(5)
 game.StarterGui:SetCore("SendNotification", {
-Title = "Support Executor"; 
-Text = "Krnl Synapse Script Ware And More"; 
-Icon = "http://www.roblox.com/asset/?id=9615044335";
+Title = "Key Saved"; 
+Text = "Your Key is Save Workspace in Your Executor File"; 
+Icon = "rbxassetid://7495464623";
 Duration = 5; 
 })
+
