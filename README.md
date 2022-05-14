@@ -12,7 +12,7 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "Discord Server",
 	Icon = "http://www.roblox.com/asset/?id=9614208528"; -- the image if u want. 
 	Text = "Discord Server Copy Link?",
-	Duration = 10,
+	Duration = 5,
 	Callback = bindable,
 	Button1 = "Copy"
 })
