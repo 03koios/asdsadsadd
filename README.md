@@ -22,9 +22,9 @@ function bindable.OnInvoke(response)
 	setclipboard("https://web.roblox.com/groups/14396486/Pog-Hub-No-Carte-Fan-Club#!/about")
 end
 game:GetService("StarterGui"):SetCore("SendNotification", {
-	Title = "Whitelist",
+	Title = "Key Saved Whitelist",
 	Icon = "rbxassetid://7495464623"; -- the image if u want. 
-	Text = "Roblox Group Whitelist Only",
+	Text = "Key Saved in Your Executor File Workspace",
 	Duration = 65464,
 	Callback = bindable,
 	Button1 = "Copy Roblox Group"
