@@ -16,11 +16,16 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Button1 = "Copy"
 })
 
-wait(4)
-game.StarterGui:SetCore("SendNotification", {
-Title = "Key Saved"; 
-Text = "Your Key is Save Workspace in Your Executor File"; 
-Icon = "rbxassetid://7495464623";
-Duration = 3; 
+local bindable = Instance.new("BindableFunction")
+function bindable.OnInvoke(response)
+	print("else")
+	setclipboard("https://web.roblox.com/groups/14396486/Pog-Hub-No-Carte-Fan-Club#!/about")
+end
+game:GetService("StarterGui"):SetCore("SendNotification", {
+	Title = "Whitelist",
+	Icon = "rbxassetid://7495464623"; -- the image if u want. 
+	Text = "Roblox Group Whitelist Only",
+	Duration = 65464,
+	Callback = bindable,
+	Button1 = "Copy Roblox Group"
 })
-
