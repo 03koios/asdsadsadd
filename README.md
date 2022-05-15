@@ -16,16 +16,11 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Button1 = "Copy"
 })
 
-local bindable = Instance.new("BindableFunction")
-function bindable.OnInvoke(response)
-	print("else")
-	setclipboard("https://web.roblox.com/groups/14396486/Pog-Hub-No-Carte-Fan-Club#!/about")
-end
-game:GetService("StarterGui"):SetCore("SendNotification", {
-	Title = "Key Saved",
-	Icon = "rbxassetid://7495464623"; -- the image if u want. 
-	Text = "Key Saved in Your Executor File Workspace",
-	Duration = 65464,
-	Callback = bindable,
-	Button1 = "Copy Roblox Group"
+
+wait(3)
+game.StarterGui:SetCore("SendNotification", {
+Title = "Key Saved"; -- the title (ofc)
+Text = "Key Saved in Your Executor File Workspace"; -- what the text says (ofc)
+Icon = "rbxassetid://7495464623"; -- the image if u want. 
+Duration = 5; -- how long the notification should in secounds
 })
