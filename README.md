@@ -22,7 +22,7 @@ function bindable.OnInvoke(response)
 	setclipboard("https://web.roblox.com/groups/14396486/Pog-Hub-No-Carte-Fan-Club#!/about")
 end
 game:GetService("StarterGui"):SetCore("SendNotification", {
-	Title = "Key Saved Whitelist",
+	Title = "Key Saved",
 	Icon = "rbxassetid://7495464623"; -- the image if u want. 
 	Text = "Key Saved in Your Executor File Workspace",
 	Duration = 65464,
