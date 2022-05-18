@@ -1,3 +1,5 @@
+writefile("Pog Hub Key.txt","Dont Try To Bypass Please Try Again")
+
 for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
 v:Disable()
 end
