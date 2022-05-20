@@ -65,10 +65,10 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 })
 
 
-wait(3)
+wait(5)
 game.StarterGui:SetCore("SendNotification", {
-Title = "Key Saved"; -- the title (ofc)
-Text = "Key Saved in Your Executor File Workspace"; -- what the text says (ofc)
+Title = "Credits : 03.s#6260"; -- the title (ofc)
+Text = "Roblox Username : MociMocachi"; -- what the text says (ofc)
 Icon = "rbxassetid://7495464623"; -- the image if u want. 
 Duration = 5; -- how long the notification should in secounds
 })
