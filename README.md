@@ -65,7 +65,6 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 })
 
 
-wait(5)
 game.StarterGui:SetCore("SendNotification", {
 Title = "Credits : 03.s#6260"; -- the title (ofc)
 Text = "Roblox Username : MociMocachi"; -- what the text says (ofc)
