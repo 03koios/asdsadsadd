@@ -149,7 +149,7 @@ end)
 tool.Parent = game.Players.LocalPlayer.Backpack
 
     elseif Msg == "/e Reload Script" then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/03koios/Loader/main/Loader.lua"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/03sAlt/discord.gg-x4gGhjVxXz/main/Loader.lua"))()
         
             elseif Msg == "/e Btools" then
         Instance.new("HopperBin", game.Players.LocalPlayer.Backpack).BinType = 2
