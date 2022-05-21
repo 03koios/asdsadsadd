@@ -61,6 +61,13 @@ game.StarterGui:SetCore("ChatMakeSystemMessage", {
 	FontSize = Enum.FontSize.Size11;	
 })
 
+    bc = BrickColor.new("Green")
+game.StarterGui:SetCore("ChatMakeSystemMessage", {
+	Text = "/e Btools";
+	Font = Enum.Font.Cartoon;
+	Color = bc.Color;
+	FontSize = Enum.FontSize.Size11;	
+})
 
     bc = BrickColor.new("Green")
 game.StarterGui:SetCore("ChatMakeSystemMessage", {
