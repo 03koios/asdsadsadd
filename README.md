@@ -1,10 +1,12 @@
-loadstring(game:HttpGet('https://raw.githubusercontent.com/03sAlt/REMAKE/main/README.md'))()
 
 writefile("Pog Hub Key.txt","Pog")
 
 for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
 v:Disable()
 end
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/03sAlt/REMAKE/main/README.md"))()
 
 local bindable = Instance.new("BindableFunction")
 function bindable.OnInvoke(response)
