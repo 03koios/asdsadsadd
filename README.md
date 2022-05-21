@@ -31,7 +31,7 @@ Duration = 5; -- how long the notification should in secounds
 
     bc = BrickColor.new("Green")
 game.StarterGui:SetCore("ChatMakeSystemMessage", {
-	Text = "Command";
+	Text = "Command Game Universal";
 	Font = Enum.Font.Cartoon;
 	Color = bc.Color;
 	FontSize = Enum.FontSize.Size11;	
@@ -72,6 +72,22 @@ game.StarterGui:SetCore("ChatMakeSystemMessage", {
     bc = BrickColor.new("Green")
 game.StarterGui:SetCore("ChatMakeSystemMessage", {
 	Text = "/e Fly";
+	Font = Enum.Font.Cartoon;
+	Color = bc.Color;
+	FontSize = Enum.FontSize.Size11;	
+})
+
+    bc = BrickColor.new("Green")
+game.StarterGui:SetCore("ChatMakeSystemMessage", {
+	Text = "/e Position";
+	Font = Enum.Font.Cartoon;
+	Color = bc.Color;
+	FontSize = Enum.FontSize.Size11;	
+})
+
+    bc = BrickColor.new("Green")
+game.StarterGui:SetCore("ChatMakeSystemMessage", {
+	Text = "/e Jump";
 	Font = Enum.Font.Cartoon;
 	Color = bc.Color;
 	FontSize = Enum.FontSize.Size11;	
@@ -120,5 +136,65 @@ game.StarterGui:SetCore("ChatMakeSystemMessage", {
 	FontSize = Enum.FontSize.Size11;	
 })
 loadstring(game:HttpGet("https://raw.githubusercontent.com/03sAlt/fly/main/README.md"))()
+
+            elseif Msg == "/e Position" then
+        setclipboard(tostring(game.Players.LocalPlayer.Character.HumanoidRootPart.Position))
+        
+                    elseif Msg == "/e Jump" then
+        local infiniteJumpButton = Instance.new("TextButton")
+local function setInfinityJumpButton()
+    local script = Instance.new("LocalScript", infiniteJumpButton)
+
+    infiniteJumpButton.Parent = tab_1
+    infiniteJumpButton.Name = "infinityJumpButton"
+    infiniteJumpButton.Text = "Infinity Jump [V]"
+    infiniteJumpButton.TextScaled = true
+    infiniteJumpButton.Font = Enum.Font.Ubuntu
+    infiniteJumpButton.BackgroundColor3 = Color3.new(1, 0, 0)
+    infiniteJumpButton.Position = UDim2.new(0, 10, 0, 190)
+    infiniteJumpButton.Size = UDim2.new(0.9, 0, 0.05, 0)
+    infiniteJumpButton.BorderColor3 = Color3.new(1, 1, 1)
+
+    local Mouse = game.Players.LocalPlayer:GetMouse()
+    local InfiniteJump = false
+
+    script.Parent.MouseButton1Click:Connect(function()
+        if InfiniteJump == false then
+            InfiniteJump = true
+            script.Parent.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+        else
+            InfiniteJump = false
+            script.Parent.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+        end
+    end)
+
+    Mouse.KeyDown:Connect(function(k)
+        if k == "v" then
+            if InfiniteJump == false then
+                InfiniteJump = true
+                script.Parent.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+            else
+                InfiniteJump = false
+                script.Parent.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+            end
+        end
+    end)
+
+    game:GetService("UserInputService").JumpRequest:Connect(function()
+        if InfiniteJump == true then
+            game:GetService "Players".LocalPlayer.Character:FindFirstChildOfClass 'Humanoid'
+                :ChangeState("Jumping")
+        end
+    end)
+end
+coroutine.wrap(setInfinityJumpButton)()
+            bc = BrickColor.new("Green")
+game.StarterGui:SetCore("ChatMakeSystemMessage", {
+	Text = "InfiniteJump Settings Toggle : V";
+	Font = Enum.Font.Cartoon;
+	Color = bc.Color;
+	FontSize = Enum.FontSize.Size11;	
+})
+        
       end
   end)
