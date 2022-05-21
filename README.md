@@ -10,7 +10,7 @@ local bindable = Instance.new("BindableFunction")
 function bindable.OnInvoke(response)
 	print("else")
 	setclipboard("https://discord.gg/x4gGhjVxXz")
-
+end
 game:GetService("StarterGui"):SetCore("SendNotification", {
 	Title = "Discord Server",
 	Icon = "http://www.roblox.com/asset/?id=9614208528"; -- the image if u want. 
