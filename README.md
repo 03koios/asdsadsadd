@@ -17,7 +17,7 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Text = "Discord Server Copy Link?",
 	Duration = 2,
 	Callback = bindable,
-	Button1 = "Join / Copy"
+	Button1 = "Copy"
 })
 
 
