@@ -105,13 +105,6 @@ game.StarterGui:SetCore("ChatMakeSystemMessage", {
 	FontSize = Enum.FontSize.Size11;	
 })
 
-    bc = BrickColor.new("Green")
-game.StarterGui:SetCore("ChatMakeSystemMessage", {
-	Text = "/e Reload Script";
-	Font = Enum.Font.Cartoon;
-	Color = bc.Color;
-	FontSize = Enum.FontSize.Size11;	
-})
 
     bc = BrickColor.new("Green")
 game.StarterGui:SetCore("ChatMakeSystemMessage", {
@@ -148,9 +141,8 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
 end)
 tool.Parent = game.Players.LocalPlayer.Backpack
 
-    elseif Msg == "/e Reload Script" then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/03sAlt/discord.gg-x4gGhjVxXz/main/Loader.lua"))()
-        
+
+       
             elseif Msg == "/e Btools" then
         Instance.new("HopperBin", game.Players.LocalPlayer.Backpack).BinType = 2
 Instance.new("HopperBin", game.Players.LocalPlayer.Backpack).BinType = 3
