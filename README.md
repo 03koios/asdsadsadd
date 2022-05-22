@@ -37,13 +37,6 @@ game.StarterGui:SetCore("ChatMakeSystemMessage", {
 	FontSize = Enum.FontSize.Size11;	
 })
 
-    bc = BrickColor.new("Green")
-game.StarterGui:SetCore("ChatMakeSystemMessage", {
-	Text = "/e Credits";
-	Font = Enum.Font.Cartoon;
-	Color = bc.Color;
-	FontSize = Enum.FontSize.Size11;	
-})
 
     bc = BrickColor.new("Green")
 game.StarterGui:SetCore("ChatMakeSystemMessage", {
@@ -85,19 +78,29 @@ game.StarterGui:SetCore("ChatMakeSystemMessage", {
 	FontSize = Enum.FontSize.Size11;	
 })
 
-    bc = BrickColor.new("Green")
+   bc = BrickColor.new("Green")
 game.StarterGui:SetCore("ChatMakeSystemMessage", {
-	Text = "/e Jump";
+	Text = "/e Headless";
 	Font = Enum.Font.Cartoon;
 	Color = bc.Color;
 	FontSize = Enum.FontSize.Size11;	
 })
 
+   bc = BrickColor.new("Green")
+game.StarterGui:SetCore("ChatMakeSystemMessage", {
+	Text = "/e Korblox";
+	Font = Enum.Font.Cartoon;
+	Color = bc.Color;
+	FontSize = Enum.FontSize.Size11;	
+})
+ 
+
 game:GetService("Players").LocalPlayer.Chatted:Connect(function(Msg)
     local RepStorage = game:GetService("ReplicatedStorage")
     local RepEvents = RepStorage:FindFirstChild("RemoteEvents")
     -- Tool-Controls
-    if Msg == "/e Credits" then
+    
+       if Msg == "/e Credits" then
     bc = BrickColor.new("Green")
 game.StarterGui:SetCore("ChatMakeSystemMessage", {
 	Text = "Discord : 03.s#6260 Discord Server discord.gg/x4gGhjVxXz";
@@ -105,6 +108,7 @@ game.StarterGui:SetCore("ChatMakeSystemMessage", {
 	Color = bc.Color;
 	FontSize = Enum.FontSize.Size11;	
 })
+    
     elseif Msg == "/e ResetAvatar" then
         game.Players.LocalPlayer.character:WaitForChild("Humanoid").Health = 0
 
@@ -140,61 +144,27 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/03sAlt/fly/main/READM
             elseif Msg == "/e Position" then
         setclipboard(tostring(game.Players.LocalPlayer.Character.HumanoidRootPart.Position))
         
-                    elseif Msg == "/e Jump" then
-        local infiniteJumpButton = Instance.new("TextButton")
-local function setInfinityJumpButton()
-    local script = Instance.new("LocalScript", infiniteJumpButton)
-
-    infiniteJumpButton.Parent = tab_1
-    infiniteJumpButton.Name = "infinityJumpButton"
-    infiniteJumpButton.Text = "Infinity Jump [V]"
-    infiniteJumpButton.TextScaled = true
-    infiniteJumpButton.Font = Enum.Font.Ubuntu
-    infiniteJumpButton.BackgroundColor3 = Color3.new(1, 0, 0)
-    infiniteJumpButton.Position = UDim2.new(0, 10, 0, 190)
-    infiniteJumpButton.Size = UDim2.new(0.9, 0, 0.05, 0)
-    infiniteJumpButton.BorderColor3 = Color3.new(1, 1, 1)
-
-    local Mouse = game.Players.LocalPlayer:GetMouse()
-    local InfiniteJump = false
-
-    script.Parent.MouseButton1Click:Connect(function()
-        if InfiniteJump == false then
-            InfiniteJump = true
-            script.Parent.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
-        else
-            InfiniteJump = false
-            script.Parent.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-        end
-    end)
-
-    Mouse.KeyDown:Connect(function(k)
-        if k == "v" then
-            if InfiniteJump == false then
-                InfiniteJump = true
-                script.Parent.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
-            else
-                InfiniteJump = false
-                script.Parent.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-            end
-        end
-    end)
-
-    game:GetService("UserInputService").JumpRequest:Connect(function()
-        if InfiniteJump == true then
-            game:GetService "Players".LocalPlayer.Character:FindFirstChildOfClass 'Humanoid'
-                :ChangeState("Jumping")
-        end
-    end)
+ 
+elseif Msg == "/e Headless" then
+    game.Players.LocalPlayer.Character.Head.Transparency = 1
+game.Players.LocalPlayer.Character.Head.Transparency = 1
+for i,v in pairs(game.Players.LocalPlayer.Character.Head:GetChildren()) do
+if (v:IsA("Decal")) then
+v.Transparency = 1
 end
-coroutine.wrap(setInfinityJumpButton)()
-            bc = BrickColor.new("Green")
-game.StarterGui:SetCore("ChatMakeSystemMessage", {
-	Text = "InfiniteJump Settings Toggle : V";
-	Font = Enum.Font.Cartoon;
-	Color = bc.Color;
-	FontSize = Enum.FontSize.Size11;	
-})
-        
+end
+    
+    
+elseif Msg == "/e Korblox" then
+    local ply = game.Players.LocalPlayer
+local chr = ply.Character
+chr.RightLowerLeg.MeshId = "902942093"
+chr.RightLowerLeg.Transparency = "1"
+chr.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+chr.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+chr.RightFoot.MeshId = "902942089"
+chr.RightFoot.Transparency = "1"
       end
-  end)
+end)
+
+
