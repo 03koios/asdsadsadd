@@ -31,36 +31,15 @@ Duration = 5; -- how long the notification should in secounds
 
     bc = BrickColor.new("Green")
 game.StarterGui:SetCore("ChatMakeSystemMessage", {
-	Text = "Command Game Universal";
+	Text = "Command";
 	Font = Enum.Font.Cartoon;
 	Color = bc.Color;
 	FontSize = Enum.FontSize.Size11;	
 })
 
 
-    bc = BrickColor.new("Green")
-game.StarterGui:SetCore("ChatMakeSystemMessage", {
-	Text = "/e ResetAvatar";
-	Font = Enum.Font.Cartoon;
-	Color = bc.Color;
-	FontSize = Enum.FontSize.Size11;	
-})
 
-    bc = BrickColor.new("Green")
-game.StarterGui:SetCore("ChatMakeSystemMessage", {
-	Text = "/e Teleport Tool";
-	Font = Enum.Font.Cartoon;
-	Color = bc.Color;
-	FontSize = Enum.FontSize.Size11;	
-})
 
-    bc = BrickColor.new("Green")
-game.StarterGui:SetCore("ChatMakeSystemMessage", {
-	Text = "/e Btools";
-	Font = Enum.Font.Cartoon;
-	Color = bc.Color;
-	FontSize = Enum.FontSize.Size11;	
-})
 
     bc = BrickColor.new("Green")
 game.StarterGui:SetCore("ChatMakeSystemMessage", {
@@ -70,13 +49,7 @@ game.StarterGui:SetCore("ChatMakeSystemMessage", {
 	FontSize = Enum.FontSize.Size11;	
 })
 
-    bc = BrickColor.new("Green")
-game.StarterGui:SetCore("ChatMakeSystemMessage", {
-	Text = "/e Position";
-	Font = Enum.Font.Cartoon;
-	Color = bc.Color;
-	FontSize = Enum.FontSize.Size11;	
-})
+
 
    bc = BrickColor.new("Green")
 game.StarterGui:SetCore("ChatMakeSystemMessage", {
@@ -109,27 +82,10 @@ game.StarterGui:SetCore("ChatMakeSystemMessage", {
 	FontSize = Enum.FontSize.Size11;	
 })
     
-    elseif Msg == "/e ResetAvatar" then
-        game.Players.LocalPlayer.character:WaitForChild("Humanoid").Health = 0
-
-    elseif Msg == "/e Teleport Tool" then
-        mouse = game.Players.LocalPlayer:GetMouse()
-tool = Instance.new("Tool")
-tool.RequiresHandle = false
-tool.Name = "Teleport Tool 03.s#6260"
-tool.Activated:connect(function()
-local pos = mouse.Hit+Vector3.new(0,2.5,0)
-pos = CFrame.new(pos.X,pos.Y,pos.Z)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = pos
-end)
-tool.Parent = game.Players.LocalPlayer.Backpack
+  
 
 
-       
-            elseif Msg == "/e Btools" then
-        Instance.new("HopperBin", game.Players.LocalPlayer.Backpack).BinType = 2
-Instance.new("HopperBin", game.Players.LocalPlayer.Backpack).BinType = 3
-Instance.new("HopperBin", game.Players.LocalPlayer.Backpack).BinType = 4
+      
 
     elseif Msg == "/e Fly" then
             bc = BrickColor.new("Green")
@@ -141,10 +97,9 @@ game.StarterGui:SetCore("ChatMakeSystemMessage", {
 })
 loadstring(game:HttpGet("https://raw.githubusercontent.com/03sAlt/fly/main/README.md"))()
 
-            elseif Msg == "/e Position" then
-        setclipboard(tostring(game.Players.LocalPlayer.Character.HumanoidRootPart.Position))
+
         
- 
+
 elseif Msg == "/e Headless" then
     game.Players.LocalPlayer.Character.Head.Transparency = 1
 game.Players.LocalPlayer.Character.Head.Transparency = 1
