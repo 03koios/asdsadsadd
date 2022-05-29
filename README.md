@@ -10,10 +10,11 @@ sound.SoundId = "rbxassetid://6958727243"
 sound.Looped = false
 sound:Play()
 
-game.StarterGui:SetCore("SendNotification", {
-Title = "Welcome User"; -- the title (ofc)
-Text = game.Players.LocalPlayer.Name; -- what the text says (ofc)
-Icon = "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&height=420&format=png"; -- the image if u want. 
-Duration = 5; -- how long the notification should in secounds
-})
+local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/03sAlt/tHEE/main/README.md"))()
 
+Notification.Notify("Welcome User", game.Players.LocalPlayer.Name, "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&height=420&format=png", {
+Duration = 10,       
+Main = {
+    Rounding = true,
+}
+});
