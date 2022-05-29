@@ -1,5 +1,5 @@
 
-writefile("Pog Hub Key.txt","Pog")
+writefile("Credits Pog Hub No Carte.txt","Scripter : 03.s#6260 Scripter : Lura#0001 Discord Server : discord.gg/x4gGhjVxXz ")
 
 for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
 v:Disable()
