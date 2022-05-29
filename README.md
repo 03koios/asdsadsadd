@@ -5,6 +5,10 @@ for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
 v:Disable()
 end
 
+local sound = Instance.new("Sound", game.Workspace)
+sound.SoundId = "rbxassetid://6958727243"
+sound.Looped = false
+sound:Play()
 
 game.StarterGui:SetCore("SendNotification", {
 Title = "Welcome User"; -- the title (ofc)
