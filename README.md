@@ -1,6 +1,9 @@
 
 writefile("Credits Pog Hub No Carte.txt","Scripter : 03.s#6260 Scripter : Lura#0001 Discord Server : discord.gg/x4gGhjVxXz ")
 
+writefile("Loadingstring Saved Pog Hub No Carte.txt","loadstring(game:HttpGet("https://raw.githubusercontent.com/03koios/Loader/main/Loader.lua"))()")
+
+
 for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
 v:Disable()
 end
