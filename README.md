@@ -1,4 +1,4 @@
-writefile("Github Loader 03s.txt","Github Loader : https://raw.githubusercontent.com/03koios/Loader/main/Loader.lua The Keys is : PogSage? Last Key System Used")
+writefile("Loader.txt","Nadir Hub is All Script Skid From My Script Lol")
 
 writefile("Credits Pog Hub No Carte.txt","Scripter : 03.s#6260 Scripter : Lura#0001 Discord Server : discord.gg/x4gGhjVxXz ")
 
