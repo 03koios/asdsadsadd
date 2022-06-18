@@ -12,7 +12,7 @@ sound:Play()
 
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/03sAlt/tHEE/main/README.md"))()
 
-Notification.Notify("Welcome User", game.Players.LocalPlayer.Name, "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&height=420&format=png", {
+Notification.Notify("Welcome", game.Players.LocalPlayer.Name, "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&height=420&format=png", {
 Duration = 10,       
 Main = {
     Rounding = true,
