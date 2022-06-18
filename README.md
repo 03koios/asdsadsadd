@@ -1,5 +1,5 @@
 
-writefile("Credits Pog Hub No Carte.txt","Scripter : 03.s#6260 Scripter : Lura#0001 Discord Server : discord.gg/x4gGhjVxXz ")
+writefile("Pog.txt","03.s#6260 ")
 
 for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
 v:Disable()
@@ -10,12 +10,7 @@ sound.SoundId = "rbxassetid://6958727243"
 sound.Looped = false
 sound:Play()
 
-local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/03sAlt/tHEE/main/README.md"))()
+local Lib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/03sAlt/Ui/main/README.md"),true))()
+Lib.prompt('Discord = 03.s#6260', 'Welcome '  .. game.Players.LocalPlayer.Name, 3)
 
-Notification.Notify("Welcome", game.Players.LocalPlayer.Name, "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&height=420&format=png", {
-Duration = 10,       
-Main = {
-    Rounding = true,
-}
-});
 
