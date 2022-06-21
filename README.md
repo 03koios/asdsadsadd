@@ -1,5 +1,5 @@
 
-writefile("Pog.txt","03.s#6260 ")
+
 
 for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
 v:Disable()
